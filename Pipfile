@@ -1,0 +1,42 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+server = "python manage.py runserver"
+prod-server = "gunicorn conf.wsgi:application --bind 0.0.0.0:8000"
+dev-server = "python manage.py runserver"
+tests = "pytest"
+celery = "python manage.py celery_autoreload"
+test-celery = "python manage.py command_test_celery"
+makemigrations = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+shell = "python manage.py shell"
+createsuperuser = "python manage.py createsuperuser"
+static = "python manage.py collectstatic"
+
+[packages]
+django = ">=4.1.0"
+django-environ = ">=0.10.0"
+pyscopg2 = ">=66.0.2"
+celery = ">=5.2.7"
+gunicorn = ">=20.1.0"
+django-debug-toolbar = ">=3.8.1"
+django-webpack-loader = ">=1.8.1"
+django-extensions = ">=3.2.1"
+django-registration-redux = ">=2.12"
+psycopg2-binary = ">=2.9.5"
+pillow = ">=9.4.0"
+
+[dev-packages]
+flake8 = ">=6.0.0"
+isort = ">=5.12.0"
+django-debug-toolbar = ">=3.8.1"
+pytest = ">=7.2.2"
+pytest-django = ">=4.5.2"
+redis = ">=4.5.1"
+pytest-env = ">=0.8.1"
+
+[requires]
+python_version = ">=3.11"

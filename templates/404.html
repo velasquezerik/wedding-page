@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="uisual" content="Made with Uisual (uisual.com)">
+    <meta name="author" content="#">
+    <meta name="description" content="#">
+    <meta name="referrer" content="unsafe-url">
+    <meta name="robots" content="index, follow">
+    <!-- SPEED -->
+    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="dns-prefetch" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- LINK -->
+    <link rel="me" href="#">
+    <link rel="canonical" href="#">
+    <link rel="icon" type="image/png" href="#" sizes="48x48">
+    <!-- PERFORMANCE -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link rel="preload" as="style" href="{% static 'invitation/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'invitation/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'invitation/css/adminlte.min.css' %}">
+    <!-- TITLE -->
+    <title>Heyzel&Erik Wedding | Invitation</title>
+  </head>
+  <body>
+    <header role="banner" class="ui-section-header">
+    </header>
+    <main role="main">
+      <section class="ui-section-hero">
+        <div class="ui-layout-container">
+          <!-- COPYWRITING -->
+          <div class="ui-layout-column-6 ui-layout-column-center">
+            <h1>404 Page Not Found</h1>
+            <p class="ui-text-intro">Page not Found</p>
+            <!-- CTA -->
+            <div class="ui-component-cta ui-layout-flex">
+              <a href="{% url 'home:index' %}" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Home Page</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer role="contentinfo" class="ui-section-footer">
+    </footer>
+    <!-- jQuery -->
+    <script src="{% static 'invitation/plugins/jquery/jquery.min.js' %}"></script>
+    <!-- Bootstrap 4 -->
+    <script src="{% static 'invitation/plugins/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- AdminLTE App -->
+    <script src="{% static 'invitation/js/adminlte.min.js' %}"></script>
+    
+  </body>
+</html>
