@@ -24,12 +24,29 @@ def confirm(request, invitation_id):
     invitation.n_people_confirm = value
 
     invitation.status = True
-    print(value)
+    invitation.not_coming = False
+    #print(value)
     if int(value) == 0:
+        invitation.not_coming = True
         invitation.status = False
     
     invitation.save()
     return HttpResponseRedirect(reverse('invitation:detail', args=(invitation.id,)))
+
+def notComing(request, invitation_id):
+    try:
+        invitation = Invitation.objects.get(pk=invitation_id)
+    except Invitation.DoesNotExist:
+        raise Http404("Invitation does not exist")
+    
+
+    invitation.status = False
+    invitation.not_coming = True
+    invitation.n_people_confirm = 0
+
+    invitation.save()
+    return HttpResponseRedirect(reverse('invitation:detail', args=(invitation.id,)))
+
 
 def page_not_found_view(request, exception):
     return render(request, '404.html')

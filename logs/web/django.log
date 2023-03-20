@@ -335,3 +335,4 @@ django.template.exceptions.TemplateDoesNotExist: apps/home/detail.html
 2023-03-16 14:53:08,007 django.request WARNING  Not Found: /uploads/cards/Invitation-card-6.jpg
 2023-03-16 14:53:08,148 django.request WARNING  Not Found: /uploads/cards/Invitation-card-6.jpg
 2023-03-16 14:53:08,333 django.request WARNING  Not Found: /uploads/cards/Invitation-card-6.jpg
+2023-03-17 09:12:14,206 django.request WARNING  Not Found: /invitation/8a703aaf-c45c-408f-bfbe-7b23d28e525c/no

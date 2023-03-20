@@ -19,6 +19,8 @@ class Invitation(models.Model):
     n_people = models.IntegerField(default=1)
     n_people_confirm = models.IntegerField(default=0)
     status = models.BooleanField(default=False)
+    not_coming = models.BooleanField(default=False)
+    civil = models.BooleanField(default=False)
     image = models.ImageField(upload_to='cards', blank=True)
 
     def __str__(self):

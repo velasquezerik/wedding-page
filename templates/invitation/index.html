@@ -38,17 +38,26 @@
             <div class="ui-layout-container">
               <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
                 <!-- IMAGE -->
-                <img src="{% static 'invitation/img/invitationBase.PNG' %}" loading="lazy" alt="#" class="ui-image-half-left">
+                <img src="{% static 'invitation/img/confirm.PNG' %}" loading="lazy" alt="#" class="ui-image-half-left">
                 <!-- FEATURE -->
                 <div>
-                  <h2>La invitación ha sido confirmada</h2>
-                  <p class="ui-text-intro">Invitación confirmada</p>
-                  <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                    <li class="ui-component-list--item ui-component-list--item-check">Número de personas confirmadas: {{ invitation.n_people_confirm }}</li>
-                    <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                    <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                    <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-                  </ul>
+                  <h2>Tu invitación ha sido confirmada</h2>
+                  <p class="ui-text-intro">Invitación confirmada para {{ invitation.n_people_confirm }} personas.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          {% endif %}
+          {% if invitation.not_coming %}
+        <section class="ui-section-feature">
+            <div class="ui-layout-container">
+              <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+                <!-- IMAGE -->
+                <img src="{% static 'invitation/img/confirm.PNG' %}" loading="lazy" alt="#" class="ui-image-half-left">
+                <!-- FEATURE -->
+                <div>
+                  <h2>Sentimos que no puedas acompañarnos</h2>
+                  <p class="ui-text-intro">Puedes avisarnos si cambias de opinión</p>
                 </div>
               </div>
             </div>
@@ -59,26 +68,25 @@
           <!-- COPYWRITING -->
           <div class="ui-layout-column-6 ui-layout-column-center">
             <h1>Queremos invitarte a nuestra boda</h1>
-            <p class="ui-text-intro">Hola {{ invitation.name }}, Heyzel y Erik te quieren invitar a su boda. Espero nos confirmes la asistencia.</p>
+            <p class="ui-text-intro">Hola {{ invitation.name }}, queremos invitarte a nuestra boda. Esperamos que puedas acompañarnos este día tan especial.</p>
             <!-- CTA -->
             <div class="ui-component-cta ui-layout-flex">
               <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary" data-toggle="modal" data-target="#modal-default">{% if invitation.status %} Modificar Confirmación{% else %} Confirmar {% endif %}</a>
             </div>
           </div>
           <!-- IMAGE -->
-          <img src="{% static 'invitation/img/invitationBase.PNG' %}" loading="lazy" alt="#" class="ui-section-hero--image">
+          <img src="{% static 'invitation/img/invitation.PNG' %}" loading="lazy" alt="#" class="ui-section-hero--image">
         </div>
         <div class="modal fade" id="modal-default">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h4 class="modal-title">Confirmar Invitación</h4>
+                  <h4 class="modal-title">Confirmar asistencia</h4>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  <p>One fine body&hellip;</p>
                   <form action="{% url 'invitation:confirm' invitation.id %}" method="post">
                     {% csrf_token %}
                     <fieldset>
@@ -86,9 +94,10 @@
                         {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
                         
                             <input type="number" name="number_n" id="number_n" value="{{ invitation.n_people_confirm }}" min="0" max="{{ invitation.n_people }}">
-                        
+                            
                     </fieldset>
-                    <input type="submit" value="Confirm" class="btn btn-primary">
+                    <input type="submit" value="Confirmar" class="btn btn-primary">
+                    <a href="{% url 'invitation:notcoming'  invitation.id %}" role="link" aria-label="#" class="btn btn-danger"><small>No asistiré</small></a>
                     </form>
                 </div>
                 <!-- <div class="modal-footer justify-content-between">
@@ -110,52 +119,46 @@
             <!-- FEATURE -->
             <div>
               <h2>{{ invitation.name }}</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
+              <p class="ui-text-intro">Queremos que seas parte de nuestra celebración. Con esta invitación cuentas con pases para {{ invitation.n_people }} personas.</p>
             </div>
           </div>
           <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
             <!-- FEATURE -->
             <div>
-              <h2>Nice Features</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
+              <h2>Si quieres regalarnos...</h2>
+              <p class="ui-text-intro">No tenemos lista de regalos así que, el efectivo es nuestro mejor aliado.</p>
             </div>
             <!-- IMAGE -->
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-image-half-right">
+            <img src="{% static 'invitation/img/cash.PNG' %}" loading="lazy" alt="#" class="ui-image-half-right">
           </div>
           <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
             <!-- IMAGE -->
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-image-half-left">
+            <img src="{% static 'invitation/img/dressCode.PNG' %}" loading="lazy" alt="#" class="ui-image-half-left">
             <!-- FEATURE -->
             <div>
-              <h2>Nice Features</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
+              <h2>Semi formal</h2>
+              <p class="ui-text-intro">Será una celebración muy familiar pero aprovechamos la ocasión para ponernos guapos y estar cómodos en esta primavera.</p>
             </div>
           </div>
+          {% if invitation.civil %}
+          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
+            <!-- FEATURE -->
+            <div>
+              <h2>Donde daremos el sí</h2>
+              <p class="ui-text-intro">Nos puedes acompañar a la ceremonia civil, será íntimo y muy breve, en el Parque Quinta del Berro.</p>
+            </div>
+            <!-- IMAGE -->
+            <img src="{% static 'invitation/img/civilCeremony.PNG' %}" loading="lazy" alt="#" class="ui-image-half-right">
+          </div>
+          {% endif %}
         </div>
       </section>
       <section class="ui-section-close">
         <div class="ui-layout-container">
           <div class="ui-layout-column-6 ui-layout-column-center">
-            <h2>Improve your work.</h2>
-            <p class="ui-text-intro">Lorem ipsum dolor sit amet consectetur.</p>
+            <h2>Celebraremos en:</h2>
+            <p class="ui-text-intro">Restaurante El Torreón.</p>
+              <p class="ui-text-intro">Carretera Crito de El Pardo, 3. El Pardo, 28048 Madrid.</p>
             <!-- CTA -->
             <div class="ui-component-cta ui-layout-flex">
                 <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary" data-toggle="modal" data-target="#modal-default">{% if invitation.status %} Modificar Confirmación{% else %} Confirmar {% endif %}</a>
