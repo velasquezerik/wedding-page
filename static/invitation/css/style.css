@@ -395,8 +395,9 @@ TABLE OF CONTENT
   
   .ui-section-close {
     background-color: var(--ui-color-background-secondary);
-    padding-top: 5rem;
+    padding-top: 3rem;
     text-align: center;
+    padding-bottom: 3rem;
   }
   
   /*--------------------------------------------------------------

@@ -53,7 +53,7 @@
             <div class="ui-layout-container">
               <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
                 <!-- IMAGE -->
-                <img src="{% static 'invitation/img/confirm.PNG' %}" loading="lazy" alt="#" class="ui-image-half-left">
+                <img src="{% static 'invitation/img/cancel.PNG' %}" loading="lazy" alt="#" class="ui-image-half-left">
                 <!-- FEATURE -->
                 <div>
                   <h2>Sentimos que no puedas acompañarnos</h2>
@@ -115,22 +115,21 @@
         <div class="ui-layout-container">
           <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
             <!-- IMAGE -->
-            <img src="{{ invitation.image.url}}" loading="lazy" alt="#" class="ui-image-half-left">
+            
             <!-- FEATURE -->
             <div>
               <h2>{{ invitation.name }}</h2>
               <p class="ui-text-intro">Queremos que seas parte de nuestra celebración. Con esta invitación cuentas con pases para {{ invitation.n_people }} personas.</p>
             </div>
+            <img src="{{ invitation.image.url}}" loading="lazy" alt="#" class="ui-image-half-left">
           </div>
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <!-- FEATURE -->
+          <!-- <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
             <div>
               <h2>Si quieres regalarnos...</h2>
               <p class="ui-text-intro">No tenemos lista de regalos así que, el efectivo es nuestro mejor aliado.</p>
             </div>
-            <!-- IMAGE -->
             <img src="{% static 'invitation/img/cash.PNG' %}" loading="lazy" alt="#" class="ui-image-half-right">
-          </div>
+          </div> -->
           <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
             <!-- IMAGE -->
             <img src="{% static 'invitation/img/dressCode.PNG' %}" loading="lazy" alt="#" class="ui-image-half-left">
