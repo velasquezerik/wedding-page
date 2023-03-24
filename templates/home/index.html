@@ -1,128 +1,89 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- META -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="uisual" content="Made with Uisual (uisual.com)">
-    <meta name="author" content="#">
-    <meta name="description" content="#">
-    <meta name="referrer" content="unsafe-url">
-    <meta name="robots" content="index, follow">
-    <!-- SPEED -->
-    <link rel="preconnect" href="https://res.cloudinary.com">
-    <link rel="dns-prefetch" href="https://res.cloudinary.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-    <!-- LINK -->
-    <link rel="me" href="#">
-    <link rel="canonical" href="#">
-    <link rel="icon" type="image/png" href="#" sizes="48x48">
-    <!-- PERFORMANCE -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="preload" as="style" href="{% static 'home/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
-    <!-- TITLE -->
-    <title>Heyzel&Erik Wedding | Home</title>
-  </head>
-  <body>
-    <header role="banner" class="ui-section-header">
-    </header>
-    <main role="main">
-      <section class="ui-section-hero">
-        <div class="ui-layout-container">
-          <!-- COPYWRITING -->
-          <div class="ui-layout-column-6 ui-layout-column-center">
-            <h1>Designnnnnn better.</h1>
-            <p class="ui-text-intro">Lorem ipsum dolor sit amet, consectetur lit, enimad eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi.</p>
-            <!-- CTA -->
-            <div class="ui-component-cta ui-layout-flex">
-              <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Confirmar</a>
-            </div>
-          </div>
-          <!-- IMAGE -->
-          <img src="{% static 'home/img/ipad.png' %}" loading="lazy" alt="#" class="ui-section-hero--image">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Heyzel&Erik Wedding</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'home/img/favicon.ico' %}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'home/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'home/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'home/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center">
+
+      <h1>Heyzel&Erik</h1>
+      <h2>Falta poco para nuestra Boda</h2>
+      <div class="countdown d-flex justify-content-center" data-count="2023/05/20">
+        <div>
+          <h3>%d</h3>
+          <h4>Days</h4>
         </div>
-      </section>
-      <section class="ui-section-feature">
-        <div class="ui-layout-container">
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <!-- IMAGE -->
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-image-half-left">
-            <!-- FEATURE -->
-            <div>
-              <h2>Nice Features</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
-            </div>
-          </div>
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <!-- FEATURE -->
-            <div>
-              <h2>Nice Features</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
-            </div>
-            <!-- IMAGE -->
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-image-half-right">
-          </div>
-          <div class="ui-section-feature__layout ui-layout-grid ui-layout-grid-2">
-            <!-- IMAGE -->
-            <img src="https://res.cloudinary.com/uisual/image/upload/assets/devices/ipad.png" loading="lazy" alt="#" class="ui-image-half-left">
-            <!-- FEATURE -->
-            <div>
-              <h2>Nice Features</h2>
-              <p class="ui-text-intro">Lorem ipsum dolor sit amet, consec adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim ad minim veniam, quis nostrud exercitation ullamco nisi equi.</p>
-              <ul class="ui-component-list ui-component-list-feature ui-layout-grid">
-                <li class="ui-component-list--item ui-component-list--item-check">Unlimited domain names.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">150&plus; components.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">Lifetime updates.</li>
-                <li class="ui-component-list--item ui-component-list--item-check">24/7 technical support.</li>
-              </ul>
-            </div>
-          </div>
+        <div>
+          <h3>%h</h3>
+          <h4>Hours</h4>
         </div>
-      </section>
-      <section class="ui-section-close">
-        <div class="ui-layout-container">
-          <div class="ui-layout-column-6 ui-layout-column-center">
-            <h2>Improve your work.</h2>
-            <p class="ui-text-intro">Lorem ipsum dolor sit amet consectetur.</p>
-            <!-- CTA -->
-            <div class="ui-component-cta ui-layout-flex">
-              <a href="#" role="link" aria-label="#" class="ui-component-button ui-component-button-normal ui-component-button-primary">Confirmar</a>
-            </div>
-          </div>
+        <div>
+          <h3>%m</h3>
+          <h4>Minutes</h4>
         </div>
-      </section>
-    </main>
-    <footer role="contentinfo" class="ui-section-footer">
-      <div class="ui-layout-container">
-        <div class="ui-section-footer__layout ui-layout-flex">
-          <!-- COPYRIGHT -->
-          <p class="ui-section-footer--copyright ui-text-note"><small>&copy; erikvelasquez.com</small></p>
-          <!-- MENU -->          
-          <nav role="navigation" class="ui-section-footer--nav ui-section-footer--menu ui-layout-flex">
-            <a href="{% url 'home:index' %}" role="link" aria-label="#" class="ui-text-note"><small>Home</small></a>
-          </nav>
-          <!-- SOCIAL -->
-          <nav role="navigation" class="ui-section-footer--nav ui-section-footer--social ui-layout-flex">
-          </nav>
+        <div>
+          <h3>%s</h3>
+          <h4>Seconds</h4>
         </div>
       </div>
-    </footer>
-  </body>
+
+    </div>
+  </header><!-- End #header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>erikvelasquez.com</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End #footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'home/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'home/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'home/js/main.js' %}"></script>
+
+</body>
+
 </html>
