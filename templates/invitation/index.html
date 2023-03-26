@@ -93,7 +93,12 @@
                         <legend><h1>Número de personas</h1></legend>
                         {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
                         
-                            <input type="number" name="number_n" id="number_n" value="{{ invitation.n_people_confirm }}" min="0" max="{{ invitation.n_people }}">
+                        {% if invitation.status %}
+                        <input type="number" name="number_n" id="number_n" value="{{ invitation.n_people_confirm }}" min="0" max="{{ invitation.n_people }}">
+                        {% else %}
+                        <input type="number" name="number_n" id="number_n" value="{{ invitation.n_people }}" min="0" max="{{ invitation.n_people }}">
+                        {% endif %}
+                            
                             
                     </fieldset>
                     <input type="submit" value="Confirmar" class="btn btn-primary">
