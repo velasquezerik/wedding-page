@@ -43,7 +43,7 @@ TABLE OF CONTENT
   
     /* COLOR PALETTE */
   
-    --ui-color-n-000: #d9ddbf;
+    --ui-color-n-000: #d9ddbf87;
     --ui-color-n-025: #d9ddbf;
     --ui-color-n-050: #d9ddbf;
     --ui-color-n-300: #aeaeae;
@@ -70,7 +70,6 @@ TABLE OF CONTENT
     ------------------------------------------------------------*/
   
     --ui-typography-typeface: "Garamond", Serif;
-    /* --ui-typography-typeface: "Inter", sans-serif; */
   
     /* FONT SIZE */
   
