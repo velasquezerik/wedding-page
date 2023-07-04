@@ -3099,3 +3099,342 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'confirm' with arguments '(''
 2023-03-24 17:17:40,114 django.server INFO     "GET /invitation/8a703aaf-c45c-408f-bfbe-7b23d28e525c/ HTTP/1.1" 200 8690
 2023-03-24 17:17:40,263 django.server INFO     "GET /invitation/8a703aaf-c45c-408f-bfbe-7b23d28e525c/ HTTP/1.1" 200 8690
 2023-03-24 17:17:40,469 django.server INFO     "GET /invitation/8a703aaf-c45c-408f-bfbe-7b23d28e525c/ HTTP/1.1" 200 8690
+2023-07-04 16:45:44,047 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 16:45:59,900 django.server INFO     "GET / HTTP/1.1" 200 2503
+2023-07-04 16:45:59,960 django.server INFO     "GET /static/home/css/style.css HTTP/1.1" 200 13486
+2023-07-04 16:45:59,962 django.server INFO     "GET /static/home/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 80420
+2023-07-04 16:45:59,964 django.server INFO     "GET /static/home/js/main.js HTTP/1.1" 200 2122
+2023-07-04 16:45:59,964 django.server INFO     "GET /static/home/vendor/bootstrap-icons/bootstrap-icons.css HTTP/1.1" 200 95609
+2023-07-04 16:45:59,964 django.server INFO     "GET /static/home/vendor/php-email-form/validate.js HTTP/1.1" 200 2734
+2023-07-04 16:45:59,972 django.server INFO     "GET /static/home/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 194901
+2023-07-04 16:46:00,027 django.server INFO     "GET /static/home/img/bg.jpg HTTP/1.1" 200 54798
+2023-07-04 16:46:00,053 django.server INFO     "GET /static/home/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2?24e3eb84d0bcaf83d77f904c78ac1f47 HTTP/1.1" 200 121296
+2023-07-04 16:46:00,100 django.server INFO     "GET /static/home/img/favicon.ico HTTP/1.1" 200 1150
+2023-07-04 16:53:41,198 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 16:53:42,037 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 16:53:47,340 django.server INFO     "GET / HTTP/1.1" 200 4541
+2023-07-04 16:53:47,374 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 16:53:47,420 django.server WARNING  "GET /static/home/img/park.jpg HTTP/1.1" 404 1911
+2023-07-04 16:53:47,425 django.server WARNING  "GET /static/home/img/coast.jpg HTTP/1.1" 404 1914
+2023-07-04 16:53:47,427 django.server WARNING  "GET /static/home/img/bridge.jpg HTTP/1.1" 404 1917
+2023-07-04 16:53:47,431 django.server WARNING  "GET /static/home/img/rails.jpg HTTP/1.1" 404 1914
+2023-07-04 16:53:47,431 django.server WARNING  "GET /static/home/img/traffic.jpg HTTP/1.1" 404 1920
+2023-07-04 16:53:47,434 django.server WARNING  "GET /static/home/img/tunnel.jpg HTTP/1.1" 404 1917
+2023-07-04 16:53:47,451 django.request WARNING  Not Found: /favicon.ico
+2023-07-04 16:53:47,452 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2633
+2023-07-04 16:54:02,293 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 16:57:20,534 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 16:57:28,265 django.server INFO     "GET / HTTP/1.1" 200 4541
+2023-07-04 16:57:28,316 django.server INFO     "GET /static/home/img/bridge.jpg HTTP/1.1" 200 62244
+2023-07-04 16:57:28,318 django.server INFO     "GET /static/home/img/park.jpg HTTP/1.1" 200 94880
+2023-07-04 16:57:28,319 django.server INFO     "GET /static/home/img/coast.jpg HTTP/1.1" 200 90531
+2023-07-04 16:57:28,320 django.server INFO     "GET /static/home/img/rails.jpg HTTP/1.1" 200 90925
+2023-07-04 16:57:28,320 django.server INFO     "GET /static/home/img/tunnel.jpg HTTP/1.1" 200 105827
+2023-07-04 16:57:28,328 django.server INFO     "GET /static/home/img/traffic.jpg HTTP/1.1" 200 69246
+2023-07-04 16:57:28,330 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 16:59:09,212 django.server INFO     "GET / HTTP/1.1" 200 4602
+2023-07-04 16:59:09,234 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 16:59:11,557 django.server INFO     "GET / HTTP/1.1" 200 4602
+2023-07-04 16:59:11,572 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 16:59:51,292 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 16:59:51,315 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:48,846 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:48,868 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:51,389 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:51,409 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:51,753 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:51,768 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:51,965 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:51,979 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:52,180 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:52,194 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:52,360 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:52,375 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:52,533 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:52,546 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:52,717 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:52,732 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:52,909 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:52,922 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:53,246 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:53,258 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:53,452 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:53,466 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:53,653 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:53,665 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:53,844 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:53,858 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:02:54,025 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:02:54,039 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:03:16,452 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:04:01,771 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:04:06,888 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:06,915 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:07,996 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:08,011 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:08,318 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:08,331 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:08,552 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:08,565 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:08,760 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:08,774 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:08,952 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:08,965 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:09,116 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:09,128 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:09,297 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:09,311 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:09,460 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:09,473 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:09,655 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:09,669 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:09,836 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:09,852 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:10,012 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:10,032 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:10,172 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:10,187 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:10,355 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:04:10,371 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:04:16,106 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:05:16,199 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:05:16,228 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:05:17,272 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:05:17,288 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:36,860 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:36,883 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:37,629 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:37,644 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:37,873 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:37,891 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:38,039 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:38,053 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:38,203 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:38,218 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:38,380 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:38,402 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:38,539 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:38,557 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:38,709 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:38,723 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:38,873 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:38,892 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:39,052 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:39,073 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:06:39,239 django.server INFO     "GET / HTTP/1.1" 200 4573
+2023-07-04 17:06:39,258 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:08:02,727 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:11:17,042 django.server INFO     "GET / HTTP/1.1" 200 5046
+2023-07-04 17:11:17,062 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:11:44,932 django.server INFO     "GET / HTTP/1.1" 200 4772
+2023-07-04 17:11:44,947 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:13:04,190 django.server INFO     "GET / HTTP/1.1" 200 4586
+2023-07-04 17:13:04,206 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:14:14,086 django.server INFO     "GET / HTTP/1.1" 200 4760
+2023-07-04 17:14:14,109 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:14:33,963 django.server INFO     "GET / HTTP/1.1" 200 4544
+2023-07-04 17:14:33,979 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:15:08,819 django.server INFO     "GET / HTTP/1.1" 200 4399
+2023-07-04 17:15:08,840 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:15:57,643 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 17:15:58,474 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:16:01,707 django.server INFO     "GET / HTTP/1.1" 200 2503
+2023-07-04 17:16:23,233 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 17:16:23,801 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:16:27,755 django.server INFO     "GET / HTTP/1.1" 200 4399
+2023-07-04 17:16:27,776 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:22:25,141 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/models.py changed, reloading.
+2023-07-04 17:22:25,883 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:22:45,331 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/models.py changed, reloading.
+2023-07-04 17:22:45,886 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:23:12,637 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/admin.py changed, reloading.
+2023-07-04 17:23:13,143 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:23:47,288 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:23:54,873 django.server INFO     "GET / HTTP/1.1" 200 4399
+2023-07-04 17:23:54,901 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:23:59,551 django.server INFO     "GET /admin HTTP/1.1" 301 0
+2023-07-04 17:23:59,568 django.server INFO     "GET /admin/ HTTP/1.1" 302 0
+2023-07-04 17:23:59,601 django.server INFO     "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+2023-07-04 17:23:59,624 django.server INFO     "GET /static/admin/css/login.css HTTP/1.1" 200 958
+2023-07-04 17:23:59,625 django.server INFO     "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2619
+2023-07-04 17:23:59,626 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+2023-07-04 17:23:59,627 django.server INFO     "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 796
+2023-07-04 17:23:59,627 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+2023-07-04 17:23:59,630 django.server INFO     "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3763
+2023-07-04 17:23:59,639 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+2023-07-04 17:23:59,658 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2023-07-04 17:23:59,659 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2023-07-04 17:24:17,661 django.server INFO     "GET / HTTP/1.1" 200 4399
+2023-07-04 17:24:17,716 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:24:17,722 django.server INFO     "GET /static/home/img/coast.jpg HTTP/1.1" 200 90531
+2023-07-04 17:24:17,727 django.server INFO     "GET /static/home/img/bridge.jpg HTTP/1.1" 200 62244
+2023-07-04 17:24:17,730 django.server INFO     "GET /static/home/img/tunnel.jpg HTTP/1.1" 200 105827
+2023-07-04 17:24:17,732 django.server INFO     "GET /static/home/img/rails.jpg HTTP/1.1" 200 90925
+2023-07-04 17:24:17,732 django.server INFO     "GET /static/home/img/park.jpg HTTP/1.1" 200 94880
+2023-07-04 17:24:17,733 django.server INFO     "GET /static/home/img/traffic.jpg HTTP/1.1" 200 69246
+2023-07-04 17:24:17,814 django.server INFO     "GET /static/home/img/favicon.ico HTTP/1.1" 200 1150
+2023-07-04 17:24:22,318 django.server INFO     "GET /admin/ HTTP/1.1" 302 0
+2023-07-04 17:24:22,324 django.server INFO     "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+2023-07-04 17:24:22,337 django.server INFO     "GET /static/admin/css/base.css HTTP/1.1" 200 20344
+2023-07-04 17:24:22,347 django.server INFO     "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2023-07-04 17:24:22,348 django.server INFO     "GET /static/admin/css/login.css HTTP/1.1" 304 0
+2023-07-04 17:24:22,349 django.server INFO     "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2023-07-04 17:24:22,350 django.server INFO     "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2023-07-04 17:24:22,351 django.server INFO     "GET /static/admin/css/responsive.css HTTP/1.1" 200 18854
+2023-07-04 17:24:22,355 django.server INFO     "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+2023-07-04 17:24:22,380 django.server INFO     "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+2023-07-04 17:24:22,381 django.server INFO     "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+2023-07-04 17:24:22,416 django.request WARNING  Not Found: /favicon.ico
+2023-07-04 17:24:22,417 django.server WARNING  "GET /favicon.ico HTTP/1.1" 404 2633
+2023-07-04 17:24:31,053 django.server INFO     "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2023-07-04 17:24:31,073 django.server INFO     "GET /admin/ HTTP/1.1" 200 9315
+2023-07-04 17:24:31,085 django.server INFO     "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2023-07-04 17:24:31,097 django.server INFO     "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2023-07-04 17:24:31,098 django.server INFO     "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2023-07-04 17:24:31,113 django.server INFO     "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+2023-07-04 17:24:34,363 django.server INFO     "GET /admin/home/photo/ HTTP/1.1" 200 6204
+2023-07-04 17:24:34,377 django.server INFO     "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2023-07-04 17:24:34,388 django.server INFO     "GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+2023-07-04 17:24:34,389 django.server INFO     "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+2023-07-04 17:24:34,389 django.server INFO     "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8985
+2023-07-04 17:24:34,393 django.server INFO     "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2023-07-04 17:24:34,394 django.server INFO     "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2023-07-04 17:24:34,394 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:24:34,396 django.server INFO     "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2023-07-04 17:24:34,400 django.server INFO     "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+2023-07-04 17:24:34,400 django.server INFO     "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+2023-07-04 17:24:34,412 django.server INFO     "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+2023-07-04 17:24:34,428 django.server INFO     "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2023-07-04 17:24:38,981 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 6811
+2023-07-04 17:24:38,995 django.server INFO     "GET /static/admin/css/forms.css HTTP/1.1" 200 8944
+2023-07-04 17:24:38,997 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:24:39,013 django.server INFO     "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+2023-07-04 17:24:39,019 django.server INFO     "GET /static/admin/css/widgets.css HTTP/1.1" 200 11297
+2023-07-04 17:24:39,034 django.server INFO     "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+2023-07-04 17:26:11,478 django.server INFO     "GET /admin/home/photo/ HTTP/1.1" 200 6204
+2023-07-04 17:26:11,494 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:26:17,610 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 6811
+2023-07-04 17:26:17,625 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:31:56,069 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:32:05,809 django.server INFO     "GET /admin/home/photo/ HTTP/1.1" 200 6204
+2023-07-04 17:32:05,828 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:32:07,782 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 6811
+2023-07-04 17:32:07,797 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:32:19,832 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:32:19,842 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:32:19,857 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:32:19,871 django.server INFO     "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+2023-07-04 17:32:25,381 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:32:25,391 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:32:25,403 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:32:30,911 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:32:30,921 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:32:30,932 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:32:35,779 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:32:35,789 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:32:35,807 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:32:43,892 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:32:43,901 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:32:43,917 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:32:51,621 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:32:51,631 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:32:51,646 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:32:57,086 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:32:57,096 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:32:57,109 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:33:02,570 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:33:02,579 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:33:02,594 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:33:07,251 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-04 17:33:07,261 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 7118
+2023-07-04 17:33:07,275 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:33:11,025 django.server INFO     "GET /admin/home/photo/ HTTP/1.1" 200 10005
+2023-07-04 17:33:11,041 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-04 17:33:47,681 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 17:33:48,260 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:34:48,467 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 17:34:48,980 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:36:33,003 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 17:36:33,518 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:39:37,961 django.server INFO     "GET / HTTP/1.1" 200 9524
+2023-07-04 17:39:37,988 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:41:12,907 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:41:12,939 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:41:12,952 django.server INFO     "GET /media/images/rails.jpg HTTP/1.1" 200 90925
+2023-07-04 17:41:12,955 django.server INFO     "GET /media/images/coast.jpg HTTP/1.1" 200 90531
+2023-07-04 17:41:12,956 django.server INFO     "GET /media/images/benches.jpg HTTP/1.1" 200 82015
+2023-07-04 17:41:12,959 django.server INFO     "GET /media/images/park.jpg HTTP/1.1" 200 94880
+2023-07-04 17:41:12,961 django.server INFO     "GET /media/images/bridge.jpg HTTP/1.1" 200 62244
+2023-07-04 17:41:12,962 django.server INFO     "GET /media/images/rocks.jpg HTTP/1.1" 200 60093
+2023-07-04 17:41:12,962 django.server INFO     "GET /media/images/sky.jpg HTTP/1.1" 200 41645
+2023-07-04 17:41:12,967 django.server INFO     "GET /media/images/tunnel.jpg HTTP/1.1" 200 105827
+2023-07-04 17:41:12,971 django.server INFO     "GET /media/images/traffic.jpg HTTP/1.1" 200 69246
+2023-07-04 17:44:39,655 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:44:39,678 django.server INFO     "GET /media/images/benches.jpg HTTP/1.1" 304 0
+2023-07-04 17:44:39,679 django.server INFO     "GET /media/images/park.jpg HTTP/1.1" 304 0
+2023-07-04 17:44:39,680 django.server INFO     "GET /media/images/coast.jpg HTTP/1.1" 304 0
+2023-07-04 17:44:39,681 django.server INFO     "GET /media/images/bridge.jpg HTTP/1.1" 304 0
+2023-07-04 17:44:39,681 django.server INFO     "GET /media/images/rails.jpg HTTP/1.1" 304 0
+2023-07-04 17:44:39,681 django.server WARNING  "GET /static/home/css/gallery-clean.css HTTP/1.1" 404 1938
+2023-07-04 17:44:39,688 django.server INFO     "GET /media/images/rocks.jpg HTTP/1.1" 304 0
+2023-07-04 17:44:39,689 django.server INFO     "GET /media/images/traffic.jpg HTTP/1.1" 304 0
+2023-07-04 17:44:39,691 django.server INFO     "GET /media/images/sky.jpg HTTP/1.1" 304 0
+2023-07-04 17:44:39,694 django.server INFO     "GET /media/images/tunnel.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:03,919 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:46:07,374 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:46:07,400 django.server INFO     "GET /media/images/benches.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:07,401 django.server INFO     "GET /media/images/coast.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:07,401 django.server INFO     "GET /media/images/bridge.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:07,404 django.server INFO     "GET /media/images/park.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:07,404 django.server INFO     "GET /media/images/rails.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:07,406 django.server INFO     "GET /media/images/traffic.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:07,406 django.server INFO     "GET /static/home/css/gallery-clean.css HTTP/1.1" 200 901
+2023-07-04 17:46:07,406 django.server INFO     "GET /media/images/sky.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:07,408 django.server INFO     "GET /media/images/rocks.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:07,410 django.server INFO     "GET /media/images/tunnel.jpg HTTP/1.1" 304 0
+2023-07-04 17:46:56,270 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:46:58,852 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:46:59,405 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:46:59,585 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:46:59,768 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:46:59,919 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:47:00,086 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:47:00,251 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:47:00,434 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:47:00,618 django.server INFO     "GET / HTTP/1.1" 200 9440
+2023-07-04 17:51:27,933 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 17:51:28,980 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:51:47,624 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 17:51:48,576 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:55:02,259 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-04 17:55:03,117 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:56:01,315 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/urls.py changed, reloading.
+2023-07-04 17:56:01,883 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:56:09,278 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/urls.py changed, reloading.
+2023-07-04 17:56:09,791 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 17:59:21,547 django.server INFO     "GET / HTTP/1.1" 200 9962
+2023-07-04 17:59:21,572 django.server INFO     "GET /media/images/bridge.jpg HTTP/1.1" 304 0
+2023-07-04 17:59:21,575 django.server INFO     "GET /media/images/coast.jpg HTTP/1.1" 304 0
+2023-07-04 17:59:21,576 django.server INFO     "GET /media/images/benches.jpg HTTP/1.1" 304 0
+2023-07-04 17:59:21,585 django.server INFO     "GET /media/images/park.jpg HTTP/1.1" 304 0
+2023-07-04 17:59:21,586 django.server INFO     "GET /media/images/rocks.jpg HTTP/1.1" 304 0
+2023-07-04 17:59:21,586 django.server INFO     "GET /media/images/rails.jpg HTTP/1.1" 304 0
+2023-07-04 17:59:21,590 django.server INFO     "GET /media/images/sky.jpg HTTP/1.1" 304 0
+2023-07-04 17:59:21,592 django.server INFO     "GET /media/images/tunnel.jpg HTTP/1.1" 304 0
+2023-07-04 17:59:21,592 django.server INFO     "GET /media/images/traffic.jpg HTTP/1.1" 304 0
+2023-07-04 18:00:20,169 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/urls.py changed, reloading.
+2023-07-04 18:00:21,042 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-04 18:00:24,034 django.server INFO     "GET / HTTP/1.1" 200 9935
+2023-07-04 18:01:03,224 django.server INFO     "GET / HTTP/1.1" 200 9845
+2023-07-04 18:01:04,905 django.server INFO     "GET /download/bfe26d3a-654f-4faf-963b-cb72dbeac9e9/ HTTP/1.1" 200 41645
+2023-07-04 18:02:54,578 django.server INFO     "GET / HTTP/1.1" 200 9880
+2023-07-04 18:02:54,602 django.server INFO     "GET /media/images/rails.jpg HTTP/1.1" 304 0
+2023-07-04 18:02:54,602 django.server INFO     "GET /media/images/benches.jpg HTTP/1.1" 304 0
+2023-07-04 18:02:54,604 django.server INFO     "GET /media/images/park.jpg HTTP/1.1" 304 0
+2023-07-04 18:02:54,607 django.server INFO     "GET /media/images/coast.jpg HTTP/1.1" 304 0
+2023-07-04 18:02:54,609 django.server INFO     "GET /media/images/bridge.jpg HTTP/1.1" 304 0
+2023-07-04 18:02:54,610 django.server INFO     "GET /media/images/rocks.jpg HTTP/1.1" 304 0
+2023-07-04 18:02:54,624 django.server INFO     "GET /media/images/tunnel.jpg HTTP/1.1" 304 0
+2023-07-04 18:02:54,625 django.server INFO     "GET /media/images/sky.jpg HTTP/1.1" 304 0
+2023-07-04 18:02:54,628 django.server INFO     "GET /media/images/traffic.jpg HTTP/1.1" 304 0
+2023-07-04 18:03:19,848 django.server INFO     "GET /download/9ef4c13a-8bc7-4ac1-8a27-7742a2d99db3/ HTTP/1.1" 200 62244

@@ -1,0 +1,138 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Heyzel&Erik Wedding</title>
+    <!-- Favicons -->
+    <link href="{% static 'home/img/favicon.ico' %}" rel="icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="{% static 'home/css/gallery-clean.css' %}">
+
+
+</head>
+<body>
+
+<div class="container gallery-container">
+
+    <h1>Heyzel&Erik</h1>
+
+    <p class="page-description text-center">Our Wedding</p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+
+            <!-- 
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'home/img/park.jpg' %}">
+                        <img src="{% static 'home/img/park.jpg' %}" alt="Park">
+                    </a>
+                    <div class="card-body">
+                        <div class="caption">
+                            <button type="button" class="btn btn-primary my-2">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'home/img/bridge.jpg' %}">
+                        <img src="{% static 'home/img/bridge.jpg' %}" alt="Bridge">
+                    </a>
+                    <div class="card-body">
+                        <div class="caption">
+                            <button type="button" class="btn btn-primary my-2">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'home/img/tunnel.jpg' %}">
+                        <img src="{% static 'home/img/tunnel.jpg' %}" alt="Tuneel">
+                    </a>
+                    <div class="card-body">
+                        <div class="caption">
+                            <button type="button" class="btn btn-primary my-2">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'home/img/coast.jpg' %}">
+                        <img src="{% static 'home/img/coast.jpg' %}" alt="Coast">
+                    </a>
+                    <div class="card-body">
+                        <div class="caption">
+                            <button type="button" class="btn btn-primary my-2">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'home/img/rails.jpg' %}">
+                        <img src="{% static 'home/img/rails.jpg' %}" alt="Rails">
+                    </a>
+                    <div class="card-body">
+                        <div class="caption">
+                            <button type="button" class="btn btn-primary my-2">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{% static 'home/img/traffic.jpg' %}">
+                        <img src="{% static 'home/img/traffic.jpg' %}" alt="Traffic">
+                    </a>
+                    <div class="card-body">
+                        <div class="caption">
+                            <button type="button" class="btn btn-primary my-2">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            -->
+
+            {% if photos|length > 0 %}
+            {% for photo in photos %}
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="{{photo.image.url}}">
+                        <img src="{{photo.image.url}}" alt="Traffic">
+                    </a>
+                    <div class="card-body">
+                        <div class="caption">
+                            <a href="{% url 'home:download' photo.id %}" type="button" class="btn btn-primary my-2">Download</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+            <h2>No Images</h2>
+            {% endif %}
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
