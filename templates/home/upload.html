@@ -1,0 +1,13 @@
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+     <p>
+        <label>Browse and select one or more files</label>&nbsp;&nbsp;
+        <input type="file" name="images" autocomplete="off" required multiple>
+    </p>
+    <button type="submit">Upload</button>
+  </form>
+
+
+{% for img in images %}
+    <h3>Succesfully uploaded : {{img.id}}</h3>
+    {% endfor %}

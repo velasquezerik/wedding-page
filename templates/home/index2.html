@@ -110,8 +110,8 @@
             {% for photo in page_obj %}
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                    <a class="lightbox" href="{{photo.image.url}}">
-                        <img src="{{photo.image.url}}" alt="Traffic">
+                    <a class="lightbox" href="{{photo.image_resize.url}}">
+                        <img src="{{photo.image_resize.url}}" alt="Traffic">
                     </a>
                     <div class="card-body">
                         <div class="caption">

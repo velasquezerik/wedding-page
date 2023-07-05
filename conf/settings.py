@@ -87,6 +87,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Third party
+    'imagekit',
 
     # Local
     'apps.misc',

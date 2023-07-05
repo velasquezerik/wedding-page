@@ -12,9 +12,11 @@ click-didyoumean==0.3.0
 click-plugins==1.1.1
 click-repl==0.3.0
 Django==4.2.3
+django-appconf==1.0.5
 django-debug-toolbar==4.1.0
 django-environ==0.10.0
 django-extensions==3.2.3
+django-imagekit==4.1.0
 django-registration-redux==2.12
 django-storages==1.13.2
 django-webpack-loader==2.0.1
@@ -33,7 +35,8 @@ isort==5.12.0
 kombu==5.3.1
 mccabe==0.7.0
 packaging==23.0
-Pillow==10.0.0
+pilkit==2.0
+Pillow==9.4.0
 pluggy==1.0.0
 prompt-toolkit==3.0.39
 protobuf==4.23.3
