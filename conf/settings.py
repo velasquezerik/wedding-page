@@ -1,4 +1,6 @@
 from pathlib import Path
+from google.oauth2 import service_account
+
 import os
 import environ
 
@@ -140,6 +142,21 @@ STATIC_ROOT = env('STATIC_ROOT', default=root_path('static'))
 MEDIA_URL = env('MEDIA_URL', default='/media/')
 MEDIA_ROOT = env('MEDIA_ROOT', default=root_path('media'))
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+
+# -----------------------------------------------------------------------------
+# Sorage files
+# -----------------------------------------------------------------------------
+USE_STORAGE = env.bool('USE_STORAGE', default=False)
+
+if USE_STORAGE:
+    STORAGES = {"default": {"BACKEND": "storages.backends.gcloud.GoogleCloudStorage"},
+                "staticfiles": {"BACKEND": "storages.backends.gcloud.GoogleCloudStorage"}
+                }
+    GS_BUCKET_NAME = env('GS_BUCKET_NAME', default='YOUR_BUCKET_NAME_GOES_HERE')
+
+    GS_CREDENTIALS = service_account.Credentials.from_service_account_file(
+        "gcpCredential.json"
+    )
 
 # -----------------------------------------------------------------------------
 # Logging

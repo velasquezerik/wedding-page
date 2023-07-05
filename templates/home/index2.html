@@ -106,8 +106,8 @@
             </div> 
             -->
 
-            {% if photos|length > 0 %}
-            {% for photo in photos %}
+            {% if page_obj|length > 0 %}
+            {% for photo in page_obj %}
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                     <a class="lightbox" href="{{photo.image.url}}">
@@ -124,6 +124,24 @@
             {% else %}
             <h2>No Images</h2>
             {% endif %}
+        </div>
+
+        <div class="pagination">
+            <span class="step-links">
+                {% if page_obj.has_previous %}
+                    <a href="?page=1">&laquo; first</a>
+                    <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+                {% endif %}
+        
+                <span class="current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+                </span>
+        
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">next</a>
+                    <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+                {% endif %}
+            </span>
         </div>
 
     </div>

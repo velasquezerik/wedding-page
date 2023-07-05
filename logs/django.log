@@ -3438,3 +3438,163 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'confirm' with arguments '(''
 2023-07-04 18:02:54,625 django.server INFO     "GET /media/images/sky.jpg HTTP/1.1" 304 0
 2023-07-04 18:02:54,628 django.server INFO     "GET /media/images/traffic.jpg HTTP/1.1" 304 0
 2023-07-04 18:03:19,848 django.server INFO     "GET /download/9ef4c13a-8bc7-4ac1-8a27-7742a2d99db3/ HTTP/1.1" 200 62244
+2023-07-05 06:56:05,398 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 06:56:10,184 django.server INFO     "GET / HTTP/1.1" 200 9880
+2023-07-05 06:56:10,205 django.server INFO     "GET /media/images/park.jpg HTTP/1.1" 304 0
+2023-07-05 06:56:10,206 django.server INFO     "GET /media/images/bridge.jpg HTTP/1.1" 304 0
+2023-07-05 06:56:10,206 django.server INFO     "GET /media/images/coast.jpg HTTP/1.1" 304 0
+2023-07-05 06:56:10,209 django.server INFO     "GET /media/images/benches.jpg HTTP/1.1" 304 0
+2023-07-05 06:56:10,210 django.server INFO     "GET /media/images/rails.jpg HTTP/1.1" 304 0
+2023-07-05 06:56:10,211 django.server INFO     "GET /media/images/rocks.jpg HTTP/1.1" 304 0
+2023-07-05 06:56:10,218 django.server INFO     "GET /media/images/traffic.jpg HTTP/1.1" 304 0
+2023-07-05 06:56:10,223 django.server INFO     "GET /media/images/sky.jpg HTTP/1.1" 304 0
+2023-07-05 06:56:10,223 django.server INFO     "GET /media/images/tunnel.jpg HTTP/1.1" 304 0
+2023-07-05 07:09:02,713 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-05 07:09:03,582 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 07:10:25,188 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-05 07:10:25,954 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 07:11:57,871 django.server INFO     "GET / HTTP/1.1" 200 10254
+2023-07-05 07:12:11,135 django.server INFO     "GET /?page=2 HTTP/1.1" 200 10378
+2023-07-05 07:12:16,917 django.server INFO     "GET /?page=3 HTTP/1.1" 200 10259
+2023-07-05 07:12:25,731 django.server INFO     "GET /?page=1 HTTP/1.1" 200 10254
+2023-07-05 07:13:03,638 django.server INFO     "GET /?page=1 HTTP/1.1" 200 6654
+2023-07-05 07:13:09,195 django.server INFO     "GET / HTTP/1.1" 200 6654
+2023-07-05 07:13:15,832 django.server INFO     "GET /?page=2 HTTP/1.1" 200 6770
+2023-07-05 07:13:18,399 django.server INFO     "GET /?page=3 HTTP/1.1" 200 6655
+2023-07-05 07:13:38,397 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/apps/home/views.py changed, reloading.
+2023-07-05 07:13:39,217 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 07:13:45,115 django.server INFO     "GET /?page=3 HTTP/1.1" 200 10135
+2023-07-05 07:14:13,467 django.server INFO     "GET /?page=3 HTTP/1.1" 200 10135
+2023-07-05 07:14:22,518 django.server INFO     "GET / HTTP/1.1" 200 10135
+2023-07-05 08:29:47,820 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 08:30:08,759 django.server INFO     "GET / HTTP/1.1" 200 10135
+2023-07-05 08:30:08,777 django.server INFO     "GET /media/images/benches.jpg HTTP/1.1" 304 0
+2023-07-05 08:30:08,779 django.server INFO     "GET /media/images/bridge.jpg HTTP/1.1" 304 0
+2023-07-05 08:30:08,784 django.server INFO     "GET /media/images/coast.jpg HTTP/1.1" 304 0
+2023-07-05 08:30:08,791 django.server INFO     "GET /media/images/park.jpg HTTP/1.1" 304 0
+2023-07-05 08:30:08,792 django.server INFO     "GET /media/images/rails.jpg HTTP/1.1" 304 0
+2023-07-05 08:30:08,792 django.server INFO     "GET /media/images/rocks.jpg HTTP/1.1" 304 0
+2023-07-05 08:30:08,792 django.server INFO     "GET /media/images/sky.jpg HTTP/1.1" 304 0
+2023-07-05 08:30:08,797 django.server INFO     "GET /media/images/traffic.jpg HTTP/1.1" 304 0
+2023-07-05 08:30:08,797 django.server INFO     "GET /media/images/tunnel.jpg HTTP/1.1" 304 0
+2023-07-05 08:34:22,586 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/conf/settings.py changed, reloading.
+2023-07-05 08:34:23,383 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 08:36:52,102 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/conf/settings.py changed, reloading.
+2023-07-05 08:36:52,619 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 10:31:45,053 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 10:32:00,278 django.request ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/core/files/storage/handler.py", line 35, in __getitem__
+    return self._storages[alias]
+           ~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/core/files/storage/handler.py", line 38, in __getitem__
+    params = self.backends[alias]
+             ~~~~~~~~~~~~~^^^^^^^
+KeyError: 'staticfiles'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/work/wedding/wedding-project/apps/home/views.py", line 13, in index
+    return render(request, 'home/index2.html', {'photos': all_entries, "page_obj": page_obj})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/templatetags/static.py", line 116, in render
+    url = self.url(context)
+          ^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/templatetags/static.py", line 113, in url
+    return self.handle_simple(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/templatetags/static.py", line 129, in handle_simple
+    return staticfiles_storage.url(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/utils/functional.py", line 266, in inner
+    self._setup()
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/contrib/staticfiles/storage.py", line 537, in _setup
+    self._wrapped = storages[STATICFILES_STORAGE_ALIAS]
+                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/erik/.local/share/virtualenvs/wedding-project-7fTiLn2f/lib/python3.11/site-packages/django/core/files/storage/handler.py", line 40, in __getitem__
+    raise InvalidStorageError(
+django.core.files.storage.handler.InvalidStorageError: Could not find config for 'staticfiles' in settings.STORAGES.
+2023-07-05 10:32:00,280 django.server ERROR    "GET / HTTP/1.1" 500 146525
+2023-07-05 10:33:04,863 django.utils.autoreload INFO     /Users/erik/work/wedding/wedding-project/conf/settings.py changed, reloading.
+2023-07-05 10:33:05,843 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 10:33:10,256 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 10:33:17,403 django.server INFO     "GET / HTTP/1.1" 200 37161
+2023-07-05 10:34:08,778 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2023-07-05 10:34:24,315 django.server INFO     "GET / HTTP/1.1" 200 37161
+2023-07-05 10:34:35,241 django.server INFO     "GET /admin/ HTTP/1.1" 200 16899
+2023-07-05 10:34:39,172 django.server INFO     "GET /admin/home/photo/ HTTP/1.1" 200 25570
+2023-07-05 10:34:39,193 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:34:47,578 django.server INFO     "POST /admin/home/photo/ HTTP/1.1" 200 23064
+2023-07-05 10:34:49,200 django.server INFO     "POST /admin/home/photo/ HTTP/1.1" 302 0
+2023-07-05 10:34:49,688 django.server INFO     "GET /admin/home/photo/ HTTP/1.1" 200 21905
+2023-07-05 10:34:49,715 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:34:56,677 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23365
+2023-07-05 10:34:56,696 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:06,499 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:07,050 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23672
+2023-07-05 10:35:07,068 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:12,509 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:13,027 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23672
+2023-07-05 10:35:13,044 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:19,238 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:19,766 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23672
+2023-07-05 10:35:19,833 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:25,813 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:26,332 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23672
+2023-07-05 10:35:26,350 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:32,519 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:33,041 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23672
+2023-07-05 10:35:33,060 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:39,519 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:40,040 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23672
+2023-07-05 10:35:40,064 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:45,623 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:46,136 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23672
+2023-07-05 10:35:46,155 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:51,416 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:51,932 django.server INFO     "GET /admin/home/photo/add/ HTTP/1.1" 200 23672
+2023-07-05 10:35:51,950 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:35:57,509 django.server INFO     "POST /admin/home/photo/add/ HTTP/1.1" 302 0
+2023-07-05 10:35:58,001 django.server INFO     "GET /admin/home/photo/ HTTP/1.1" 200 25844
+2023-07-05 10:35:58,019 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:36:00,449 django.server INFO     "GET /admin/home/photo/ HTTP/1.1" 200 25570
+2023-07-05 10:36:00,466 django.server INFO     "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+2023-07-05 10:36:01,842 django.server INFO     "GET /admin/ HTTP/1.1" 200 16774
+2023-07-05 10:36:04,689 django.server INFO     "GET / HTTP/1.1" 200 37161
+2023-07-05 10:36:13,058 django.server INFO     "GET /download/769b7ebc-997a-45d2-9895-1a217f9fede3/ HTTP/1.1" 200 82015
