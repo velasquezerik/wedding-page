@@ -8,7 +8,7 @@ class Event(models.Model):
     name = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
-        return str(self.name) +' '+ str(self.id)
+        return str(self.name) + ' ' + str(self.id)
 
 
 class Invitation(models.Model):
@@ -24,4 +24,4 @@ class Invitation(models.Model):
     image = models.ImageField(upload_to='cards', blank=True)
 
     def __str__(self):
-        return str(self.name) +' '+ str(self.id) + ' : Confimacion - ' + str(self.status)
+        return str(self.name) + ' ' + str(self.id) + ' : Confimacion - ' + str(self.status)

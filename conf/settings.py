@@ -1,15 +1,9 @@
-from pathlib import Path
-from google.oauth2 import service_account
-
 import os
+
 import environ
 
 env = environ.Env()
 root_path = environ.Path(__file__) - 2
-
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
 
 # -----------------------------------------------------------------------------
 # Basic Config
@@ -45,7 +39,7 @@ SECRET_KEY = env('SECRET_KEY', default='bvta)#d1zny^e7fi+aezp2u(9+**y)r_*)=+brcy
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=[])
 CSRF_TRUSTED_ORIGINS = env.list('CSRF_TRUSTED_ORIGINS', default=[])
 
-#AUTH_USER_MODEL = 'users.User'
+# AUTH_USER_MODEL = 'users.User'
 AUTH_PASSWORD_VALIDATORS = [
     {'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator'},
     {'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator'},
@@ -66,13 +60,6 @@ REGISTRATION_AUTO_LOGIN = env.bool('REGISTRATION_AUTO_LOGIN', default=True)
 # -----------------------------------------------------------------------------
 DJANGO_DATABASE_URL = env.db('DATABASE_URL', default='sqlite:///db.sqlite3')
 DATABASES = {'default': DJANGO_DATABASE_URL}
-"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR +'/db.sqlite3',
-    }
-}"""
 
 # -----------------------------------------------------------------------------
 # Applications configuration
@@ -145,11 +132,13 @@ MEDIA_ROOT = env('MEDIA_ROOT', default=root_path('media'))
 ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
 # -----------------------------------------------------------------------------
-# Sorage files
+# Storage files
 # -----------------------------------------------------------------------------
 USE_STORAGE = env.bool('USE_STORAGE', default=False)
 
 if USE_STORAGE:
+    from google.oauth2 import service_account
+
     STORAGES = {"default": {"BACKEND": "storages.backends.gcloud.GoogleCloudStorage"},
                 "staticfiles": {"BACKEND": "storages.backends.gcloud.GoogleCloudStorage"}
                 }

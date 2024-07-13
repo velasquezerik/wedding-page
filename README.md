@@ -10,11 +10,12 @@ This repo is a starting point for a clasic django web service project running on
 The database should be configured in the host machine, as it is easier for development.
 
 ## Getting started
+
 If you are starting a new project go ahead and clone this repo in a directory of your choosing
 
 Create a database for your project. Then you need to create a file called `.env` and write the environment variables you wish to use for development
 
-```
+```text
 ENV=dev
 DEBUG=on
 SECRET_KEY='123'
@@ -34,7 +35,7 @@ ALLOWED_HOSTS=web,localhost,127.0.0.1
 
 We now need to override `DATABASE_URL` environment variable inside of Docker to connect directly to you host machine. Create a file called `.env.docker` with the following content:
 
-```
+```text
 DATABASE_URL=postgres://<user>:<password>@<host>:5432/<db_name>
 ```
 
@@ -45,15 +46,14 @@ DATABASE_URL=postgres://<user>:<password>@<host>:5432/<db_name>
 
 We are all set up for bringing everything live with
 
-```
+```bash
 docker-compose up
 ```
 
 Wait for everything to load, and you can visit `https://127.0.0.1:8000` and your new awesomely configured site will be there.
 
-
-
 ## Docker commands
+
 Here are a few commands that may come in handy
 
 Command | Description
@@ -66,27 +66,31 @@ Command | Description
 `docker-compose run --rm web /bin/bash -c 'python manage.py migrate'` | Run a management command
 
 ## Old fashion install
+
 First of all, install pipenv so you can use the specified python version (check out .python-version). Then, run `pip install pipenv` to install it's pip's successor: pipenv. Then install dependencies by running `pipenv install`. You can now start developing.
 
 These commands are at your disposal:
 
 Command | Shortcut for
 --- | ---
-`pipenv run server` | `gunicorn conf.wsgi:application --bind 0.0.0.0:8000`
-`pipenv run server_dev` | `python manage.py runserver`
+`pipenv run server` | `python manage.py runserver`
+`pipenv run prod-server` | `gunicorn conf.wsgi:application --bind 0.0.0.0:8000`
+`pipenv run dev-server` | `python manage.py runserver`
 `pipenv run tests` | `pytest`
 `pipenv run celery` | `python manage.py celery_autoreload`
+`pipenv run test-celery` | `python manage.py command_test_celery`
 `pipenv run shell` | `python manage.py shell`
 `pipenv run makemigrations` | `python manage.py makemigrations`
 `pipenv run migrate` | `python manage.py migrate`
 `pipenv run createsuperuser` | `python manage.py createsuperuser`
 `pipenv run static` | `python manage.py collectstatic`
-`pipenv run isort` | isort is a Python utility / library to sort imports alphabetically, and automatically separated into sections. 
+`pipenv run isort .` | isort is a Python utility / library to sort imports alphabetically, and automatically separated into sections.
 `pipenv run flake8` | Flake8 runs all the tools by launching the single flake8 command. It displays the warnings in a per-file, merged output.
 
 To compile your static files, you need to run `pipenv run static`.
 
 ### Environment variables
+
 These environment variables can be provided to configure your project.
 
 #### Django
@@ -110,7 +114,7 @@ LOGIN_REDIRECT_URL | Url | / | Url to redirect users after login in
 STATIC_URL | Url | /static/ | Url from which static files are served
 MEDIA_URL | Url | /media/ | Url from which media files are served
 
-#### Django Registration Redux 
+#### Django Registration Redux
 
 [Documentation](https://django-registration-redux.readthedocs.io)
 
@@ -125,7 +129,7 @@ REGISTRATION_AUTO_LOGIN | on, off | on | If this is True, your users will automa
 Name | Values | Default | Description
 --- | --- | --- | ---
 CELERY_BROKER_URL | Database url | -- | A common value for development is to use redis://cache, but it's recommended for production to use RabbitMQ
-CELERY_TASK_ALWAYS_EAGER | on, off | off | If this is True, all tasks will be executed locally by blocking until the task returns. 
+CELERY_TASK_ALWAYS_EAGER | on, off | off | If this is True, all tasks will be executed locally by blocking until the task returns.
 
 #### Loggin & Sentry
 
