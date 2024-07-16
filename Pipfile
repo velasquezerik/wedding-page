@@ -31,6 +31,8 @@ django-storages = {extras = ["google"], version = ">=1.13.2"}
 django-imagekit = "*"
 isort = "*"
 flake8 = "*"
+pytest = "*"
+pytest-django = "*"
 
 [dev-packages]
 isort = "*"

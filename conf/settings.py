@@ -21,7 +21,6 @@ WSGI_APPLICATION = 'conf.wsgi.application'
 LANGUAGE_CODE = env('LANGUAGE_CODE', default='en-us')
 TIME_ZONE = env('TIMEZONE', default='UTC')
 USE_I18N = env('USE_I18N', default=True)
-USE_L10N = env('USE_L10N', default=True)
 USE_TZ = env('USE_TZ', default=True)
 
 # -----------------------------------------------------------------------------
