@@ -43,3 +43,4 @@ pytest-env = "*"
 
 [requires]
 python_version = "3.12"
+python_full_version = "3.12.4"

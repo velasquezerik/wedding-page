@@ -61,6 +61,8 @@ REGISTRATION_AUTO_LOGIN = env.bool('REGISTRATION_AUTO_LOGIN', default=True)
 DJANGO_DATABASE_URL = env.db('DATABASE_URL', default='sqlite:///db.sqlite3')
 DATABASES = {'default': DJANGO_DATABASE_URL}
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # -----------------------------------------------------------------------------
 # Applications configuration
 # -----------------------------------------------------------------------------
@@ -193,6 +195,9 @@ LOGGING = {
     }
 }
 
+# -----------------------------------------------------------------------------
+# Sentry
+# -----------------------------------------------------------------------------
 USE_SENTRY = env.bool('USE_SENTRY', default=False)
 
 if USE_SENTRY:
